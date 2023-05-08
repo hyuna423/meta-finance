@@ -1,47 +1,135 @@
-
 /*데탑*/
-@media screen and (max-width:1440px) {
-}
+@media screen and (max-width:1440px) {}
 
 
 
 /*노트북*/
-  @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
+  #roadmap .road_bg {
+    width: auto;
+    height: 100%;
+  }
+
+  #roadmap .road_bg video {
+    height: 100%;
+    width: auto;
+  }
+
+  #team .team_box .team span dt {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #team .team_box .team span dd {
+    font-size: .8rem;
+  }
 }
 
 
 
-  /*아이패드 (768px)*/
-  @media screen and (max-width:991px) {
-}
+/*아이패드 (768px)*/
+@media screen and (max-width:991px) {}
 
 
 
 /*모바일*/
 
-@media screen and (max-width:767px) {
-
-}
+@media screen and (max-width:767px) {}
 
 
 /*모바일2*/
 
 
 @media screen and (max-width:576px) {
+  .web_area h3 {
+    font-size: 4rem;
+  }
 
+  .web_area h5 {
+    font-size: 2rem;
+  }
+
+  .web_area p {
+    line-height: 2;
+    font-size: 16px;
+  }
+
+  #team h3 {
+    color: rgb(0, 205, 219);
+    font-size: 3rem;
+    text-align: left;
+  }
+
+
+  #team .team_box {
+    flex-direction: column;
+  }
+
+  #team .team_box .team {
+    width: 60%;
+    margin-bottom: 50px;
+  }
+
+  #team .team_box .team:last-child {
+    margin-bottom: 0;
+  }
+
+  #team::after {
+    height: 10%;
+  }
+
+  #roadmap h3 {
+    font-size: 3em;
+  }
+
+  #roadmap .roadmap_area .map_box {
+    flex-direction: column;
+  }
+
+  #roadmap .roadmap_area .map_box .map {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #roadmap .roadmap_area .map_box::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 0;
+    height: 115%;
+  }
+
+  #roadmap .roadmap_area .map_box::before {
+    top: 90%;
+    right: -15px;
+    background: url(../img/arrow.png) center center / contain no-repeat;
+    transform: rotate(90deg);
+  }
+
+  #roadmap .roadmap_area .map_box .map h4 {
+    width: 100%;
+  }
+
+  #roadmap .roadmap_area .map_box .map h4::after {
+    left: 103.5%;
+    top: 50%;
+    transform: translateX(0);
+    transform: translatey(-50%);
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
 }
 
 
 
 /*모바일3 갤럭시*/
 
-  @media screen and (max-width:425px) {
-
-}
+@media screen and (max-width:425px) {}
 
 
 
 /*모바일4 아이폰*/
-    @media screen and (max-width:375px) {
-
-}
+@media screen and (max-width:375px) {}

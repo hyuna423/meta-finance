@@ -1,29 +1,319 @@
-*{margin:0; padding:0; box-sizing:border-box;}
-    a{text-decoration : none;}
-    a:focus{
-      outline: none;
-    }
-    address{font-style:normal;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+}
 
+a:focus {
+  outline: none;
+}
 
-h3{
-  font-size: 3em;
-  font-weight: 600;
+address {
+  font-style: normal;
+}
+
+h3 {
+  font-size: 6em;
+  font-weight: 900;
   margin-bottom: 30px;
-  color: #144E8A;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* web */
+
+#web {
+
+  overflow: hidden;
+  position: relative;
+}
+
+.web_area {
+  position: relative;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.web_area h3,
+.web_area h5,
+.web_area p {
+  text-align: right;
+}
+
+.web_area h3 {
+  color: #dc0047;
+  z-index: 2;
+}
+
+.web_area h5 {
+  font-size: 3rem;
+  line-height: 2;
+}
+
+.web_area p {
+  line-height: 2;
+  font-size: 20px;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+/* team */
+#team {
+  position: relative;
+  padding: 100px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#team::after {
+  content: '';
+  width: 100%;
+  height: 30%;
+  background: url(../img/team_bg.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#team h3 {
+  color: #00CDDB;
+  font-size: 4rem;
+  text-align: left;
+}
+
+#team .team_box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+#team .team_box img {
+  width: 100%;
+}
+
+#team .team_box .team {
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+}
+
+#team .team_box .team span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  bottom: -25%;
+  left: 0;
+  background: rgba(0, 33, 40, 0.63);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+
+#team .team_box .team:hover span {
+  bottom: 0;
+}
+
+#team .team_box .team span dt {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+#team .team_box .team span dt dd {
+  font-size: 1.5rem;
+}
+
+/*roadmap*/
+#roadmap {
+  position: relative;
+  overflow: hidden;
+}
+
+#roadmap .road_bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#roadmap .roadmap_area {
+  position: relative;
+  padding: 100px 0;
+  color: #fff;
+}
+
+#roadmap ul {
+  list-style: disc;
+}
+
+#roadmap .roadmap_area .map_box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  position: relative;
+}
+
+#roadmap .roadmap_area .map_box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 110%;
+  border: 1px dashed #fff;
+}
+
+#roadmap .roadmap_area .map_box::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: 0%;
+  background: url(../img/arrow.png)no-repeat center;
+  background-size: contain;
+}
+
+#roadmap .roadmap_area .map_box .map {
+  width: 30%;
+}
+
+#roadmap .roadmap_area .map_box .map h4 {
+  position: relative;
+  font-size: 2rem;
+  display: block;
+  width: min-content;
+  padding-bottom: 20px;
+}
+
+#roadmap .roadmap_area .map_box .map h4::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: -27px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+#roadmap .roadmap_area .map_box .map li {
+  line-height: 2;
+}
+
+/*footer*/
+footer {
+  padding: 100px 0;
   text-align: center;
 }
 
+footer h3 {
+  font-size: 2rem;
 
-@media (min-width:1440px) {
-  .container {
-    max-width: 1440px;
-  }
 }
 
+footer h3 span {
+  background: -webkit-linear-gradient(45deg, #3AC4A6, #E22E6D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+footer .sns_area {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+footer .sns_area i {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #3AC4A6 14.21%, #E22E6D 84.93%);
+  transition: all .5s;
+}
 
+footer .sns_area a {
+  margin-right: 30px;
+  transition: all .5s;
+}
 
-/*헤더*/
+footer .sns_area a:last-child {
+  margin-right: 0;
+}
+
+footer .sns_area a:hover i {
+  margin-top: -1px;
+  background: linear-gradient(-135deg, #3AC4A6 14.21%, #E22E6D 84.93%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
