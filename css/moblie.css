@@ -60,6 +60,10 @@
   }
 
   /*header*/
+  header .hd_all hgroup {
+    width: 10%;
+  }
+
   header .hd_all .pc_menu {
     display: none;
   }
