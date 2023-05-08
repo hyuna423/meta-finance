@@ -28,8 +28,169 @@
 </head>
 
 <body>
+  <header>
+    <div class="hd_all">
+      <hgroup>
+        <a href="index.html">
+          <h1><img src="img/logo 1.png" alt="logo" /></h1>
+        </a>
+      </hgroup>
+
+      <nav class="pc_menu">
+        <ul>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="#goToMarket" class="scroll">Go to Market</a></li>
+          <!-- <li><a href="#contact" class="scroll">Contact</a></li> -->
+          <li><a href="#team" class="scroll">Team</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#community" class="scroll">Community</a></li>
+        </ul>
+      </nav>
+
+      <!--반응형-->
+
+      <div class="m_menu_button">
+        <span></span>
+      </div>
+
+      <script>
+        $(function () {
+          $('.m_menu_button').click(function () {
+            $(this).toggleClass('active')
+          });
+        });
+      </script>
+
+      <nav class="m_menu">
+        <ul>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="#goToMarket" class="scroll">Go to Market</a></li>
+          <!-- <li><a href="#contact" class="scroll">Contact</a></li> -->
+          <li><a href="#team" class="scroll">Team</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <li><a href="#community" class="scroll">Community</a></li>
+        </ul>
+      </nav>
+
+      <!--반응형 js-->
+      <script type="text/javascript">
+        $(function () {
+          $(".m_menu_button").click(function () {
+            $(".m_menu").animate({ width: "toggle" }, 250);
+          });
+        });
+      </script>
+    </div>
+  </header>
 
   <main>
+    <section id="home">
+      <div class="home_wrap">
+        <!-- <div class="home_video">
+          <video loop autoplay muted playsinline>
+            <source src="vid/main_vid.mp4" type="video/mp4">
+          </video>
+        </div> -->
+
+        <div class="home_txt1">
+          <h1>METAFINANCE</h1>
+          <h4>Making Loans more rewarding than ever before!</h4>
+        </div>
+
+        <div class="home_txt2">
+          <a href="MetaFinance 2.0_Ver. Eng.pdf" class="home_pp_btn btn-1">
+            <h1>M/F White Paper <span><img src="img/download_icon.png" alt=""></span></h1>
+          </a>
+          <p>MetaFinance is the first web 3.0 <br>
+            loan matching platform which connects <br>
+            borrowers and lenders and rewards all
+          </p>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+
+    <section id="about">
+      <div class="about_wrap container">
+
+        <h3> <span>MetaFinance's</span> aim</h3>
+
+        <div class="about_wrap_content">
+
+          <div class="about_wrap_left">
+            <p>
+              MetaFinance 2.0 aims to use blockchain technology to connect borrowers <br> and lenders, remove
+              intermediaries and marketing costs, <br>
+              and provide transparency in the loan process to <br>
+              address traditional finance inefficiencies and create <br> a more inclusive finance and credit system.
+            </p>
+          </div>
+
+          <div class="about_wrap_right">
+            <h2><span>01 /</span> Token Economy</h2>
+            <h2><span>02 / </span> Web 3.0 loan matching platform</h2>
+            <h2><span>03 / </span> MF Business Model</h2>
+            <h2><span>04 / </span> MF1 Merch Market</h2>
+          </div>
+
+        </div>
+
+
+        <a href="#goToMarket" class="about_arrow scroll">
+          <div class="scroll-arrow"></div>
+          <div class="scroll-arrow"></div>
+          <div class="scroll-arrow"></div>
+        </a>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <section id="goToMarket">
+      <div class="market_vid">
+        <video loop autoplay playsinline muted>
+          <source src="vid/sub_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <div class="goToMarket_wrap container">
+
+
+        <div class="market_content">
+          <div class="market_cont_left">
+            <img src="img/market.png" alt="">
+          </div>
+
+
+          <div class="market_cont_right">
+            <h3>GO TO <br> MARKET</h3>
+            <p>
+              MetaFinance aims to eliminate <br>
+              intermediary and marketing costs present <br>
+              in the retail financial services industry, <br>
+              thus providing a transparent <br>and secure transaction process.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
     <section id="web">
       <!-- particles.js container -->
 
@@ -133,7 +294,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="community">
     <h3>JOIN OUR <span>METAFINANCE</span> COMMUNITY</h3>
     <div class="sns_area">
       <a href=""><i class="xi-forum-o"></i></a>
@@ -148,6 +309,8 @@
   </script>
   <script src="https://kit.fontawesome.com/66ee5b9576.js" crossorigin="anonymous"></script>
   <script src="js/particles.js"></script>
+  <script src="js/header.js"></script>
+
 </body>
 
 </html>

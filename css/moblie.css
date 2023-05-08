@@ -1,10 +1,36 @@
 /*데탑*/
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:1440px) {
+  /*헤더*/
+
+  header .hd_all .pc_menu {
+    width: 70%;
+  }
+
+
+  /*home*/
+  #home .home_wrap .home_txt2 a.home_pp_btn {
+    width: 65%;
+  }
+}
 
 
 
 /*노트북*/
 @media screen and (max-width:1024px) {
+
+  /*헤더*/
+
+  header .hd_all .pc_menu {
+    width: 70%;
+  }
+
+
+  /*home*/
+  #home .home_wrap .home_txt2 a.home_pp_btn {
+    width: 65%;
+  }
+
+
   #roadmap .road_bg {
     width: auto;
     height: 100%;
@@ -28,108 +54,267 @@
 
 
 /*아이패드 (768px)*/
-@media screen and (max-width:991px) {}
+@media screen and (max-width:991px) {
+  h3 {
+    font-size: 4rem;
+  }
+
+  /*header*/
+  header .hd_all .pc_menu {
+    display: none;
+  }
+
+  header .hd_all .m_menu_button {
+    display: block;
+  }
+
+
+  /*home*/
+  #home .home_wrap .home_txt2 a.home_pp_btn {
+    width: 100%;
+  }
+
+  #home .home_wrap .home_txt1 h1 {
+    font-size: 5em;
+  }
+
+  #home .home_wrap .home_txt1 h4 {
+    font-size: 1.8em;
+  }
+
+  #home .home_wrap .home_txt2 {
+    width: 40%;
+  }
+
+
+  /*about*/
+
+  #about .about_wrap .about_wrap_content {
+    flex-direction: column;
+  }
+
+  #about .about_wrap .about_wrap_content .about_wrap_left {
+    width: 100%;
+    margin: 4% 0 10%;
+  }
+
+  #about .about_wrap .about_wrap_content .about_wrap_right {
+    width: 100%;
+  }
+
+  #about .about_wrap .about_wrap_content .about_wrap_right h2 {
+    padding-left: 0;
+  }
+
+
+}
 
 
 
 /*모바일*/
 
-@media screen and (max-width:767px) {}
-
-
-/*모바일2*/
-
-
-@media screen and (max-width:576px) {
-  .web_area h3 {
-    font-size: 4rem;
+@media screen and (max-width:767px) {
+  header .hd_all hgroup {
+    width: 10%;
   }
 
-  .web_area h5 {
-    font-size: 2rem;
+  /*header*/
+  header .hd_all .m_menu ul {
+    padding: 27% 0;
   }
 
-  .web_area p {
-    line-height: 2;
-    font-size: 16px;
-  }
+  /*home*/
 
-  #team h3 {
-    color: rgb(0, 205, 219);
-    font-size: 3rem;
-    text-align: left;
+  #home .home_wrap .home_txt2 {
+    width: 42%;
   }
 
 
-  #team .team_box {
+
+
+  /*market*/
+  .market_content {
     flex-direction: column;
+    margin: 0 auto;
   }
 
-  #team .team_box .team {
-    width: 60%;
-    margin-bottom: 50px;
-  }
-
-  #team .team_box .team:last-child {
-    margin-bottom: 0;
-  }
-
-  #team::after {
-    height: 10%;
-  }
-
-  #roadmap h3 {
-    font-size: 3em;
-  }
-
-  #roadmap .roadmap_area .map_box {
-    flex-direction: column;
-  }
-
-  #roadmap .roadmap_area .map_box .map {
+  .market_content .market_cont_left {
     width: 90%;
-    margin: 20px auto;
   }
 
-  #roadmap .roadmap_area .map_box::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 100%;
-    width: 0;
-    height: 115%;
+  .market_content .market_cont_left img {
+    max-width: 100%;
   }
 
-  #roadmap .roadmap_area .map_box::before {
-    top: 90%;
-    right: -15px;
-    background: url(../img/arrow.png) center center / contain no-repeat;
-    transform: rotate(90deg);
+  .market_content .market_cont_right {
+    width: 90%;
+    margin-right: 0;
   }
 
-  #roadmap .roadmap_area .map_box .map h4 {
-    width: 100%;
+
+  /*모바일2*/
+
+
+  @media screen and (max-width:576px) {
+    h3 {
+      font-size: 3rem;
+    }
+
+    /*header*/
+
+    header .hd_all hgroup {
+      width: 20%;
+    }
+
+
+    header .hd_all .m_menu ul {
+      padding: 37% 0;
+    }
+
+    header .hd_all .m_menu ul li {
+      margin-bottom: 15%;
+    }
+
+    /*home*/
+
+    #home .home_wrap .home_txt1 h1 {
+      font-size: 3em;
+    }
+
+    #home .home_wrap .home_txt1 h4 {
+      font-size: 1.1em;
+    }
+
+    #home .home_wrap .home_txt2 {
+      width: 55%;
+      right: -20%;
+    }
+
+    #home .home_wrap .home_txt2 a.home_pp_btn {
+      padding: 3%;
+    }
+
+    #home .home_wrap .home_txt2 h1 {
+      font-size: 1.1em;
+    }
+
+    #home .home_wrap .home_txt2 p {
+      font-size: 0.9em;
+    }
+
+    #home .home_wrap .home_txt2 p br {
+      display: none;
+    }
+
+
+    /*about*/
+
+    #about {
+      padding: 100px 0;
+    }
+
+    #about .about_wrap .about_wrap_content .about_wrap_left {
+      margin: 4% 0 15%;
+    }
+
+
+
+    /*market*/
+
+    .market_content .market_cont_left img {
+      max-width: 100%;
+    }
+
+
+    .web_area h3 {
+      font-size: 4rem;
+    }
+
+    .web_area h5 {
+      font-size: 2rem;
+    }
+
+    .web_area p {
+      line-height: 2;
+      font-size: 16px;
+    }
+
+    #team h3 {
+      color: rgb(0, 205, 219);
+      font-size: 3rem;
+      text-align: left;
+    }
+
+
+    #team .team_box {
+      flex-direction: column;
+    }
+
+    #team .team_box .team {
+      width: 60%;
+      margin-bottom: 50px;
+    }
+
+    #team .team_box .team:last-child {
+      margin-bottom: 0;
+    }
+
+    #team::after {
+      height: 10%;
+    }
+
+    #roadmap h3 {
+      font-size: 3em;
+    }
+
+    #roadmap .roadmap_area .map_box {
+      flex-direction: column;
+    }
+
+    #roadmap .roadmap_area .map_box .map {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    #roadmap .roadmap_area .map_box::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 100%;
+      width: 0;
+      height: 115%;
+    }
+
+    #roadmap .roadmap_area .map_box::before {
+      top: 90%;
+      right: -15px;
+      background: url(../img/arrow.png) center center / contain no-repeat;
+      transform: rotate(90deg);
+    }
+
+    #roadmap .roadmap_area .map_box .map h4 {
+      width: 100%;
+    }
+
+    #roadmap .roadmap_area .map_box .map h4::after {
+      left: 103.5%;
+      top: 50%;
+      transform: translateX(0);
+      transform: translatey(-50%);
+    }
+
+    footer h3 {
+      font-size: 1.2rem;
+    }
   }
 
-  #roadmap .roadmap_area .map_box .map h4::after {
-    left: 103.5%;
-    top: 50%;
-    transform: translateX(0);
-    transform: translatey(-50%);
-  }
 
-  footer h3 {
-    font-size: 1.2rem;
-  }
-}
+
+  /*모바일3 갤럭시*/
+
+  @media screen and (max-width:425px) {}
 
 
 
-/*모바일3 갤럭시*/
-
-@media screen and (max-width:425px) {}
-
-
-
-/*모바일4 아이폰*/
-@media screen and (max-width:375px) {}
+  /*모바일4 아이폰*/
+  @media screen and (max-width:375px) {}
