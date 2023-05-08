@@ -1,18 +1,148 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+
+  /*헤더*/  
+
+  header .hd_all .pc_menu {
+    width: 70%;
 }
+
+
+/*home*/
+#home .home_wrap .home_txt2 a.home_pp_btn{
+  width: 65%;
+}
+
+}
+
+
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    
+  /*헤더*/  
+  header .hd_all .pc_menu{
+    width: 100%;
+  }
+
+  header .hd_all hgroup {
+    width: 10%;
+}
+
+header .hd_all hgroup a h1 img {
+  max-width: 100%;
+}
+
+
+
+/*home*/
+#home .home_wrap .home_txt2 a.home_pp_btn{
+  width: 90%;
+  padding: 4%;
+}
+
+
+/*about*/
+
+#about{
+  padding: 100px 50px;
+}
+
+#about .about_wrap .about_wrap_content .about_wrap_left {
+  width: 50%;
+}
+
+#about .about_wrap .about_wrap_content .about_wrap_left p br{
+  display: none;
+}
+
+#about .about_wrap .about_wrap_content .about_wrap_right {
+  width: 45%;
+}
+
+#about .about_wrap .about_wrap_content .about_wrap_right h2{
+  font-size: 1.2em;
+  padding-left: 60px;
+}
+
+
+/*market*/
+.market_content .market_cont_left {
+  width: 100%;
+  text-align: center;
+}
+
+.market_content .market_cont_left img{
+  max-width: 70%;
+}
+
+.market_content {
+  flex-direction: column-reverse;
+}
+
+.market_content .market_cont_right{
+  width: 100%;
+  margin-right: 0;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    /*header*/
+    header .hd_all .pc_menu {
+      display: none;
+    }
+
+    header .hd_all .m_menu_button{
+      display: block;
+    }
+
+
+    /*home*/
+
+    #home .home_wrap .home_txt1 h1{
+      font-size: 5em;
+    }
+
+    #home .home_wrap .home_txt1 h4{
+      font-size: 1.8em;
+    }
+
+    #home .home_wrap .home_txt2{
+      width: 40%;
+    }
+
+
+    /*about*/
+
+    #about .about_wrap .about_wrap_content{
+      flex-direction: column;
+    }
+
+    #about .about_wrap .about_wrap_content .about_wrap_left{
+      width: 100%;
+      margin: 4% 0 10%;
+    }
+
+    #about .about_wrap .about_wrap_content .about_wrap_right{
+      width: 100%;
+    }
+
+    #about .about_wrap .about_wrap_content .about_wrap_right h2{
+      padding-left: 0;
+    }
+
+
+
+
 }
 
 
@@ -20,6 +150,26 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+
+  /*header*/
+  header .hd_all .m_menu ul{
+    padding: 27% 0;
+  }
+
+  /*home*/
+
+  #home .home_wrap .home_txt2{
+    width: 42%;
+  }
+
+
+  /*market*/
+
+  .market_content .market_cont_left img{
+    max-width: 90%;
+  }
+
+
 
 }
 
@@ -29,6 +179,70 @@
 
 @media screen and (max-width:576px) {
 
+  /*header*/
+
+  header .hd_all hgroup {
+    width: 20%;
+  }
+
+
+  header .hd_all .m_menu ul{
+    padding: 37% 0;
+  }
+
+  header .hd_all .m_menu ul li{
+    margin-bottom: 15%;
+  }
+
+  /*home*/
+
+  #home .home_wrap .home_txt1 h1{
+    font-size: 3em;
+  }
+
+  #home .home_wrap .home_txt1 h4{
+    font-size: 1.1em;
+  }
+
+  #home .home_wrap .home_txt2{
+    width: 55%;
+    right: -20%;
+  }
+
+  #home .home_wrap .home_txt2 a.home_pp_btn{
+    padding: 3%;
+  }
+
+  #home .home_wrap .home_txt2 h1{
+    font-size: 1.1em;
+  }
+
+  #home .home_wrap .home_txt2 p {
+    font-size: 0.9em;
+  }
+
+  #home .home_wrap .home_txt2 p br{
+    display: none;
+  }
+
+
+  /*about*/
+
+  #about{
+    padding: 100px 20px;
+  }
+
+  #about .about_wrap .about_wrap_content .about_wrap_left {
+    margin: 4% 0 15%;
+  }
+
+
+
+  /*market*/
+
+  .market_content .market_cont_left img{
+    max-width: 100%;
+  }
 }
 
 
@@ -43,5 +257,5 @@
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
+      
 }
