@@ -26,7 +26,8 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
+  overflow-x: hidden;
 }
 
 .container {
@@ -37,7 +38,7 @@ body {
 /* web */
 
 #web {
-
+  background-color: #fff;
   overflow: hidden;
   position: relative;
 }
@@ -124,6 +125,7 @@ body {
   padding: 100px 0;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: #fff;
 }
 
 #team::after {
@@ -198,9 +200,10 @@ body {
 #roadmap .road_bg {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: -999;
 }
 
 #roadmap .roadmap_area {
@@ -270,6 +273,7 @@ body {
 
 /*footer*/
 footer {
+  background-color: #fff;
   padding: 100px 0;
   text-align: center;
 }
